@@ -1,0 +1,19 @@
+/* .dark {
+  background: #0f172a;
+  color: white;
+  min-height: 100vh;
+} */
+.dark {
+  background: #0f172a;
+
+  color: #f8fafc;
+
+  min-height: 100vh;
+
+  transition: all 0.3s ease;
+}
+.light {
+  background: #f8fafc;
+  color: black;
+  min-height: 100vh;
+}
