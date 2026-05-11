@@ -4,7 +4,7 @@ import './App.css'
 import Home from './pages/Home/Home'
 import Navbar from './Components/Navbar';
 import Projects from './pages/Projects/Projects';
-import Contacts from './pages/Contacts/Contacts';
+import Contacts from './pages/contacts/Contacts';
 import Skills from "./pages/Skills/Skills";
 import Resume from "./assets/resume.pdf";
 
