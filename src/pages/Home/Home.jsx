@@ -1,4 +1,5 @@
 import "./Home.css";
+import resume from "../../assets/resume.pdf";
 import { motion } from "framer-motion"
 import Myphoto from "../../assets/Myphoto.jpg";
 import {
