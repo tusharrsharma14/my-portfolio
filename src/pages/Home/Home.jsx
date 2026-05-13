@@ -1,5 +1,4 @@
 import "./Home.css";
-import resume from "../../assets/resume.pdf";
 import { motion } from "framer-motion"
 import Myphoto from "../../assets/Myphoto.jpg";
 import {
@@ -47,8 +46,8 @@ function Home() {
         </p>
         <div className="hero-buttons">
           <button>View Projects</button>
-          <a href={resume} download>
 
+          <a href={resume} download>
             <button>
               Download Resume
             </button>
