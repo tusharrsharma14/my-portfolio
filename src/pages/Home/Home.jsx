@@ -1,4 +1,5 @@
 import "./Home.css";
+import { Link } from "react-router-dom";
 import resume from "../../assets/resume.pdf";
 import { motion } from "framer-motion"
 import Myphoto from "../../assets/Myphoto.jpg";
@@ -46,12 +47,13 @@ function Home() {
           using MERN
         </p>
         <div className="hero-buttons">
-          <button>View Projects</button>
+
+          <Link to="/projects" >
+            <button> View Projects</button>
+          </Link>
 
           <a href={resume} download>
-            <button>
-              Download Resume
-            </button>
+            <button> Download Resume </button>
           </a>
         </div>
         <div className="social-icons">
