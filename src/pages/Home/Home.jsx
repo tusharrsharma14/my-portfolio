@@ -1,7 +1,7 @@
 import "./Home.css";
 import { Link } from "react-router-dom";
 import resume from "../../assets/resume.pdf";
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 import Myphoto from "../../assets/Myphoto.jpg";
 import {
   FaGithub,
@@ -80,14 +80,24 @@ function Home() {
         </div>
       </div>
 
-      <div className="hero-right">
+      <motion.div
+  className="hero-right"
+  animate={{ y: [0, -15, 0],
+    // rotate: [0, 1, 0, -1, 0],
+   }}
+  transition={{
+    duration: 4,
+    repeat: Infinity,
+    ease: "easeInOut",
+  }}
+>
 
         <img
           src={Myphoto}
           alt="Tushar Sharma"
         />
 
-      </div>
+      </motion.div>
 
     </motion.section>
   );

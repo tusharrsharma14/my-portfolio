@@ -1,5 +1,6 @@
 import "./Projects.css";
 import ProjectCard from "../../Components/ProjectCard/ProjectCard";
+import { motion } from "framer-motion";
 
 function Projects() {
 
@@ -37,7 +38,13 @@ function Projects() {
     },
   ];
   return (
-    <section className="projects">
+    <motion.section
+  className="projects"
+  initial={{ opacity: 0, y:30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.5}}
+  viewport={{ once: true }}
+>
 
       <h1>My Projects</h1>
 
@@ -58,7 +65,7 @@ function Projects() {
 
       </div>
 
-    </section>
+    </motion.section>
   );
 }
 
