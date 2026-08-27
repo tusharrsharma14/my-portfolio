@@ -1,6 +1,7 @@
 import "./Home.css";
 import { Link } from "react-router-dom";
 import resume from "../../assets/resume.pdf";
+import resume2 from "../../assets/resume2.pdf";
 import { motion } from "framer-motion";
 import Myphoto from "../../assets/Myphoto.jpg";
 import {
@@ -53,6 +54,9 @@ function Home() {
           </Link>
 
           <a href={resume} download>
+            <button> Download Resume </button>
+          </a>
+          <a href={resume2} download>
             <button> Download Resume </button>
           </a>
         </div>
